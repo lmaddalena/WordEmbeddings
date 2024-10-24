@@ -80,8 +80,8 @@ def main():
     print(f"labels contains {len(labels)} records")
 
     # print data samples
-    print(pd.DataFrame(texts, columns={"text"}).head())
-    print(pd.DataFrame(labels, columns={"spam"}).head())
+    print(pd.DataFrame(texts, columns=["text"]).head())
+    print(pd.DataFrame(labels, columns=["spam"]).head())
 
     # tokenize a list of texts into a list of sequence (list of integer)
     tokenizer = tf.keras.preprocessing.text.Tokenizer()
